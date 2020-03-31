@@ -1,0 +1,53 @@
+.SideMenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    max-width: 300px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    background: #464451;
+    transform: translateX(0px);
+    z-index: 90;
+    transition: transform .22s ease-in-out;
+}
+
+.SideMenu small {
+    color: white;
+    text-decoration: none;
+}
+
+.SideMenu.close {
+    transform:  translateX(300px);
+}
+
+.MenuHeader {
+    text-align: center;
+}
+
+.MenuItem {
+    padding-bottom:40px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+.BackDrop {
+    z-index: 50;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.SideMenu > ul {
+    padding: 20px;
+    padding-left: 50px;
+    display: grid;
+
+}
